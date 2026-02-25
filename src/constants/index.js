@@ -3,19 +3,19 @@ import {
   backend,
   creator,
   web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  threejs,
+  java,
+  python,
+  csharp,
+  springboot,
+  aspnet,
+  react,
+  nextjs,
+  supabase,
+  mysql,
+  postgresql,
+  mssql,
+  yolov8,
+  pyqt6,
   Fiverr,
   KS,
   Lisys,
@@ -60,58 +60,19 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  { name: "Java", icon: java },
+  { name: "Python", icon: python },
+  { name: "C#", icon: csharp },
+  { name: "Spring Boot", icon: springboot },
+  { name: "ASP.NET", icon: aspnet },
+  { name: "React", icon: react },
+  { name: "Next.js", icon: nextjs },
+  { name: "Supabase", icon: supabase },
+  { name: "MySQL", icon: mysql },
+  { name: "PostgreSQL", icon: postgresql },
+  { name: "MS SQL", icon: mssql },
+  { name: "YOLOv8", icon: yolov8 },
+  { name: "PyQt6", icon: pyqt6 },
 ];
 
 const experiences = [
