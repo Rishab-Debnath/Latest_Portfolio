@@ -15,14 +15,14 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
+  Fiverr,
+  KS,
+  Lisys,
+  NIC,
 } from "../assets";
 
 export const navLinks = [
@@ -42,20 +42,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full-Stack Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "Backend Engineering",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "AI & Machine Learning",
     icon: creator,
+  },
+  {
+    title: "System Optimization",
+    icon: mobile,
   },
 ];
 
@@ -116,55 +116,58 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Freelance Full-Stack Developer",
+    company_name: "Self-Employed | Remote",
+    icon: Fiverr,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Oct 2025 – Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and deployed high-performance websites for real-estate and construction clients with conversion-focused UI and responsive layouts.",
+      "Built scalable frontend architectures using React (Vite), modular component patterns, and modern CSS strategies.",
+      "Developed secure RESTful backend services using Node.js with structured API design and data validation.",
+      "Optimized performance, SEO structure, and cross-device compatibility to ensure smooth production-level delivery."
     ],
   },
+
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Machine Learning Intern",
+    company_name: "Kristl Seibt India Pvt. Ltd. | Pune",
+    icon: KS,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Oct 2024 – Jun 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed a YOLOv8s-based AI system for automated component detection and inventory management.",
+      "Built an NLP mapping model to convert European electrical parts into Indian equivalents using semantic similarity techniques.",
+      "Engineered a PyQt6 desktop application integrating real-time detection, dataset labeling, and inventory tracking.",
+      "Achieved 95% detection accuracy and reduced manual inventory effort by 80% while contributing to the AutoLabeller module."
     ],
   },
+
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Full-Stack Developer",
+    company_name: "LiSYS Technocraft LLP | Pune",
+    icon: Lisys,
+    iconBg: "#E6DEDD",
+    date: "Apr 2024 – Aug 2024",
+    points: [
+      "Developed production-grade web applications using Spring Boot, MySQL, Thymeleaf, and AJAX within an Agile workflow.",
+      "Engineered backend modules for event management systems handling 30–40 monthly users with optimized database queries.",
+      "Improved UI/UX consistency and resolved performance bottlenecks, significantly reducing support requests.",
+      "Refactored validation logic and asynchronous request handling to enhance system stability and reliability."
+    ],
+  },
+
+  {
+    title: "Full-Stack Developer",
+    company_name: "National Informatics Centre (NIC) | Government of India",
+    icon: NIC,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "May 2023 – Aug 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed secure authentication and program management modules using Spring Boot and PostgreSQL for the MATI system.",
+      "Improved authentication workflows and implemented robust validation, reducing user issues by 40%.",
+      "Automated backend data validation, increasing processing speed by 45% and reducing entry errors by 30%.",
+      "Optimized database interactions and API performance to improve scalability and system responsiveness."
     ],
   },
 ];
@@ -198,54 +201,54 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "ML-Powered Component Detection",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "AI-driven desktop application for automated detection and tracking of electrical components using YOLOv8s and NLP-based part mapping. Built with PyQt6 for real-time visualization and inventory management, achieving 95% detection accuracy and reducing manual effort by 80%.",
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "yolov8",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "machine-learning",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Rishab-Debnath",
   },
   {
-    name: "Job IT",
+    name: "Online Library Management System",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Full-stack web application built with ASP.NET and MS SQL featuring secure authentication, RESTful APIs, and a responsive admin dashboard managing 1000+ book records. Designed for high reliability with 99.5% uptime during testing and seamless multi-device support.",
     tags: [
       {
-        name: "react",
+        name: "asp.net",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "csharp",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "mssql",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Rishab-Debnath",
   },
   {
-    name: "Trip Guide",
+    name: "Smart Bookmark App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Modern full-stack bookmark manager built with Next.js App Router and Supabase, featuring Google OAuth authentication, Row Level Security (RLS), and real-time PostgreSQL subscriptions. Supports secure user-specific data access with instant multi-tab synchronization and zero page refresh.",
     tags: [
       {
-        name: "nextjs",
+        name: "next.js",
         color: "blue-text-gradient",
       },
       {
@@ -253,12 +256,16 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "postgresql",
         color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "blue-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Rishab-Debnath",
   },
 ];
 

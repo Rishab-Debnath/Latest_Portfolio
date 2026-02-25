@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -21,10 +21,15 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import Fiverr from "./company/Fiverr.png";
+import KS from "./company/KS.png";
+import Lisys from "./company/Lisys.png";
+import NIC from "./company/NIC.jpeg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -59,4 +64,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  Fiverr,
+  KS,
+  Lisys,
+  NIC,
 };
