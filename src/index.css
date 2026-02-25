@@ -13,6 +13,23 @@
 @tailwind components;
 @tailwind utilities;
 
+.static-profile-glow {
+  box-shadow: 0 0 16px 4px rgba(30, 64, 175, 0.35);
+}
+
+@keyframes profile-glow {
+  0%, 100% {
+    box-shadow: 0 0 32px 8px rgba(30, 64, 175, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 48px 16px rgba(30, 64, 175, 0.9);
+  }
+}
+
+.animate-profile-glow {
+  animation: profile-glow 2s infinite ease-in-out;
+}
+
 * {
   margin: 0;
   padding: 0;

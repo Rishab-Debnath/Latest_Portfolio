@@ -9,6 +9,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import ppp from "./ppp.jpeg";
 
 import java from "./tech/java.png";
 import python from "./tech/python.png";
@@ -42,6 +43,7 @@ export {
   github,
   menu,
   close,
+  ppp,
   java,
   python,
   csharp,

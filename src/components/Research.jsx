@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
+import { ppp } from "../assets";
 
 
 const Research = () => (
-  <section className="py-12 px-4 flex justify-start">
+  <section className="py-12 px-4 flex flex-row items-center justify-between">
     <motion.div
       variants={fadeIn("left", "spring", 0.2, 1)}
       initial="hidden"
@@ -27,6 +28,13 @@ const Research = () => (
         </a>
       </div>
     </motion.div>
+    <div className="flex-shrink-0 mr-20 hidden md:block">
+      <img
+        src={ppp}
+        alt="Profile"
+        className="w-48 h-48 object-cover rounded-full border-4 border-white animate-profile-glow"
+      />
+    </div>
   </section>
 );
 
