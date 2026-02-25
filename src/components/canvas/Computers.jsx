@@ -29,10 +29,27 @@ const Computers = ({ isMobile }) => {
   );
 };
 
+const isWebGLAvailable = () => {
+  if (typeof window === "undefined") return false;
+  try {
+    const canvas = document.createElement("canvas");
+    return !!(
+      window.WebGLRenderingContext &&
+      (canvas.getContext("webgl") || canvas.getContext("experimental-webgl"))
+    );
+  } catch (e) {
+    return false;
+  }
+};
+
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [webglSupported, setWebglSupported] = useState(true);
 
   useEffect(() => {
+    // Detect WebGL support on this device/browser
+    setWebglSupported(isWebGLAvailable());
+
     // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
 
@@ -53,13 +70,21 @@ const ComputersCanvas = () => {
     };
   }, []);
 
+  if (!webglSupported) {
+    return (
+      <div className="w-full h-[300px] sm:h-[400px] flex items-center justify-center text-secondary text-sm">
+        3D preview is not supported on this device.
+      </div>
+    );
+  }
+
   return (
     <Canvas
       frameloop='demand'
       shadows
-      dpr={[1, 2]}
+      dpr={[1, 1.5]}
       camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
+      gl={{ antialias: true, powerPreference: "high-performance" }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
