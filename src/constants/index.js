@@ -15,14 +15,14 @@ import {
   git,
   figma,
   docker,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   Fiverr,
   KS,
   Lisys,
   NIC,
+  smartbookmarkapp,
+  inevntorymanagement,
+  eLibrarymanagement,
 } from "../assets";
 
 export const navLinks = [
@@ -218,7 +218,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: inevntorymanagement,
     source_code_link: "https://github.com/Rishab-Debnath",
   },
   {
@@ -239,7 +239,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: eLibrarymanagement,
     source_code_link: "https://github.com/Rishab-Debnath",
   },
   {
@@ -264,7 +264,7 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: tripguide,
+    image: smartbookmarkapp,
     source_code_link: "https://github.com/Rishab-Debnath",
   },
 ];

@@ -16,6 +16,7 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [alert, setAlert] = useState({ show: false, type: '', message: '' });
 
   const handleChange = (e) => {
     const { target } = e;
@@ -30,6 +31,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
+    setAlert({ show: false, type: '', message: '' });
 
     emailjs
       .send(
@@ -37,9 +39,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Rishab Debnath",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "rishabdebnath422@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -47,19 +49,27 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
+          setAlert({
+            show: true,
+            type: 'success',
+            message: 'Thank you! I will get back to you as soon as possible.'
+          });
           setForm({
             name: "",
             email: "",
             message: "",
           });
+          setTimeout(() => setAlert({ show: false, type: '', message: '' }), 4000);
         },
         (error) => {
           setLoading(false);
           console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
+          setAlert({
+            show: true,
+            type: 'error',
+            message: 'Something went wrong. Please try again.'
+          });
+          setTimeout(() => setAlert({ show: false, type: '', message: '' }), 4000);
         }
       );
   };
@@ -75,6 +85,15 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
+        {alert.show && (
+          <div
+            className={`mb-4 px-4 py-3 rounded-lg text-center font-semibold transition-all duration-300
+              ${alert.type === 'success' ? 'bg-green-600 text-white' : 'bg-red-600 text-white'}`}
+            style={{ boxShadow: '0 2px 16px 0 rgba(0,0,0,0.15)' }}
+          >
+            {alert.message}
+          </div>
+        )}
         <form
           ref={formRef}
           onSubmit={handleSubmit}
